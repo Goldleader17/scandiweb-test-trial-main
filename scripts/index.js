@@ -15,11 +15,9 @@
     massDeleteBtn.on('click', function() {
         let checkboxes = $("section form input[type=checkbox]:checked");
 
-        if(checkboxes.length == 0) 
-            alert('Please, select products to delete');
-        else 
-            form.submit();
-    });
+        if(checkboxes.length != 0) 
+            form.submit();        
+        });
 })();
 
 // Function to adapt footer, based on the row count of product list.
