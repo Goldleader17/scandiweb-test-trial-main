@@ -26,7 +26,7 @@
             <label for="name">Name</label>
             <input id="name" name="nameField" type="text" autocomplete="off"> 
             <label for="price">Price ($)</label>
-            <input id="price" name="priceField" type="number" min="0.01" value="0.01"> 
+            <input id="price" name="priceField" type="number" min="0.01"> 
 
             <label for="productType">Type Switcher</label>
             <select id="productType" name="productType">
@@ -34,30 +34,27 @@
                 <option value="Book">Book</option>
                 <option value="Furniture">Furniture</option>
             </select>
+            <span id="input-warning"></span>
 
             <fieldset id="DVD-info">
                 <label for="size">Size (MB)</label>
-                <input id="size" name="size" type="number" min="1" step="1" value="1">
-                <span>Please, provide size</span>
+                <input id="size" name="size" type="number" min="1" step="1">
             </fieldset>
 
             <fieldset id="Book-info">
                 <label for="weight">Weight (KG)</label>
-                <input id="weight" name="weight" type="number" min="0" value="0.01">
-                <span>Please, provide weight</span>
+                <input id="weight" name="weight" type="number" min="0">
             </fieldset>
 
             <fieldset id="Furniture-info">
                 <label for="height">Height (CM)</label>
-                <input id="height" name="height" type="number" min="0" value="0.01">
+                <input id="height" name="height" type="number" min="0">
                 <label for="width">Width (CM)</label>
-                <input id="width" name="width" type="number" min="0" value="0.01">
+                <input id="width" name="width" type="number" min="0">
                 <label for="length">Length (CM)</label>
-                <input id="length" name="length" type="number" min="0" value="0.01">
-                <span>Please, provide dimensions</span>
+                <input id="length" name="length" type="number" min="0" >
             </fieldset>
 
-            <span id="input-warning"></span>
 
             <div id="sku-taken-values-container">
                 <?php
