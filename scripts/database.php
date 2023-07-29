@@ -7,7 +7,7 @@
         public function __construct()
         {
             try {
-                $this->databaseHandle = new PDO('mysql:host=localhost;dbname=tbl_products', 'root', '');
+                $this->databaseHandle = new PDO('mysql:host=localhost;dbname=scandiweb', 'root', '');
             }
             catch (PDOException $e) {
                 print("Error: " . $e->getMessage());
